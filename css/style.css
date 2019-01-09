@@ -30,10 +30,17 @@
 	height: 100px;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
 .col-3 {
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
+float: left;
+width: 25%;
 }
 
 .container {
@@ -52,18 +59,11 @@
 }
 
 .mx-3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-left: 15px;
 	margin-right: 15px;
 }
 
 .row {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
 }
