@@ -31,16 +31,60 @@
 }
 
 .clearfix:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.col-3, .col-sm-6, .col-md-3,.col-md-4, .col-md-6, .col-lg-3 {
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	
 }
 
 .col-3 {
-float: left;
-width: 25%;
+	float: left;
+	max-width: 25%;
+}
+
+@media (min-width: 576px) {
+
+.col-sm-6 {
+	float: left;
+	max-width: 50%;
+  }
+
+  }
+
+@media (min-width: 768px) {
+
+.col-md-3 {
+	float: left;
+	max-width: 25%;
+}
+
+.col-md-4 {
+	float: left;
+	max-width: 33.333333%;
+}
+
+.col-md-6 {
+	float: left;
+	max-width: 50%;
+}
+
+}
+
+@media (min-width: 992px) {
+	
+.col-lg-3 {
+	float: left;
+	max-width: 25%;
+}
+	
 }
 
 .container {
